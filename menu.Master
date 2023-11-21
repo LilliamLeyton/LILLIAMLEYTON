@@ -1,0 +1,36 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="menu.master.vb" Inherits="EQUIPO.menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="page">
+
+                <nav class="page__menu page__custom-settings menu">
+                    <ul class="menu__list r-list">
+                       
+                        <li class="menu__group"><a href="usuario.aspx" class="menu__link r-link text-underlined">USUARIOS</a></li>
+                        <li class="menu__group"><a href="tecnico.ASPX" class="menu__link r-link text-underlined">TECNICOS</a></li>
+                        <li class="menu__group"><a href="equipo.ASPX" class="menu__link r-link text-underlined">EQUIPOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="linktr">
+                <a href="https://cssisntmagic.substack.com" target="_blank" class="linktr__goal r-link">Subscribe on my email newsletter with CSS tips 💪💪💪</a>
+            </div>
+            <div>
+             <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
